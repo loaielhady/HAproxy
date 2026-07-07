@@ -19,6 +19,12 @@ http.createServer((req, res) => {
   res.end('This signal from server B');
 }).listen(7002);
 ```
+### run both applications with this command:
+```
+node server1.js
+node server2.js
+```
+
 1. Install HAProxy:
    - On Ubuntu/Debian: `sudo apt-get install haproxy`
     - On CentOS/RHEL: `sudo yum install haproxy`
