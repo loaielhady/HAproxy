@@ -1,7 +1,13 @@
 # haproxy
 is a free, open-source software that provides high availability, load balancing, and proxying for TCP and HTTP-based applications. It is widely used to improve the performance and reliability of web applications by distributing incoming traffic across multiple servers.
 ### steps to set up haproxy load balancing:
-we have two node js applications running on two different ports, and we want to set up HAProxy to load balance the traffic between them.
+we have two node js applications running on two different servers, and we want to set up HAProxy to load balance the traffic between them.
+
+<img width="1570" height="771" alt="Untitled-2026-07-08" src="https://github.com/user-attachments/assets/db6a1065-678b-45c0-8623-e59e0a91a6b9" />
+
+
+
+## Server A run : 
 
 #### applications 1:
 ```
@@ -10,6 +16,8 @@ http.createServer((req, res) => {
   res.end('This signal from server A');
 }).listen(7001);
 ```
+
+## Server B run :
 
 #### applications 2:
 
